@@ -1,5 +1,5 @@
 import java.util.*;
-import java.util.Stack;
+
 //E = 4V (since each cell has 4 edges)
 //Total becomes O(4V + V log V) = O(V log V) (since V log V dominates)
 //Space O(V) stores at most V nodes
@@ -33,7 +33,7 @@ public class EfficientMove {
             return;
         }
 
-        // Calculate nodes explored/visited
+        // Calculate nodes visited
         int nodesExplored = 0;
         for (boolean[] row : visited) {
             for (boolean cell : row) {
